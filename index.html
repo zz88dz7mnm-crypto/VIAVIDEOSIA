@@ -7,7 +7,9 @@
 <meta name="description" content="VIA convierte tu IA en un estudio de reels explicativos: escribís una idea y recibís el video listo para publicar.">
 <meta property="og:title" content="VIA · Videos con IA">
 <meta property="og:description" content="Escribís una idea. Recibís un video. Guion, voz, animación, portada y descripción para cada red.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%238512FD'/%3E%3Cstop offset='.35' stop-color='%23C235CB'/%3E%3Cstop offset='.7' stop-color='%23FE6549'/%3E%3Cstop offset='1' stop-color='%23FD890A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M7 4.5 28 16 7 27.5Z' fill='url(%23g)' stroke='url(%23g)' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icono-512.png">
+<meta property="og:image" content="assets/icono-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -45,9 +47,12 @@ section{padding:96px 0}
 /* Nav */
 nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
 nav.scrolled{border-color:var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.45rem;letter-spacing:-.03em;color:var(--black)}
 .logo svg{width:30px;height:30px}
+.logo-img{height:52px;width:auto;mix-blend-mode:multiply}
+.logo-img.dark{height:40px;mix-blend-mode:screen}
+.cta-logo{width:240px;height:auto;margin:0 auto 32px;mix-blend-mode:screen}
 .nav-links{display:flex;gap:28px;font-weight:500;font-size:.95rem;color:var(--muted)}
 .nav-links a:hover{color:var(--black)}
 .nav .btn{padding:10px 20px;font-size:.92rem}
@@ -264,7 +269,7 @@ footer a:hover{color:#fff}
 
 <nav class="nav" id="nav">
   <div class="wrap nav-in">
-    <a href="#" class="logo" aria-label="VIA inicio"><svg><use href="#viaMark"/></svg>VIA</a>
+    <a href="#" class="logo" aria-label="VIA inicio"><img src="assets/logo-via-claro-marca.webp" alt="VIA" width="81" height="64" class="logo-img"></a>
     <div class="nav-links">
       <a href="#como">Cómo funciona</a>
       <a href="#incluye">Qué incluye</a>
@@ -533,7 +538,7 @@ footer a:hover{color:#fff}
 <!-- 9. CTA -->
 <section class="cta" id="conseguir">
   <div class="wrap rv">
-    <svg width="64" height="64" style="margin:0 auto 28px"><use href="#viaMark"/></svg>
+    <img src="assets/logo-via-oscuro.webp" alt="VIA · Videos con IA" width="240" height="212" class="cta-logo">
     <h2>Conseguí VIA y hacé<br><span class="grad-text">tu primer video hoy.</span></h2>
     <p>Escribís una idea. Recibís un video. Así de simple.</p>
     <a href="https://instagram.com/via.videosia" target="_blank" rel="noopener" class="btn btn-primary">Conseguí VIA
@@ -543,7 +548,7 @@ footer a:hover{color:#fff}
 
 <footer>
   <div class="wrap foot">
-    <a href="#" class="logo"><svg width="24" height="24"><use href="#viaMark"/></svg>VIA</a>
+    <a href="#" class="logo" aria-label="VIA inicio"><img src="assets/logo-via-oscuro-marca.webp" alt="VIA" width="61" height="48" class="logo-img dark"></a>
     <span>La vía de tus videos con IA</span>
     <a href="https://instagram.com/via.videosia" target="_blank" rel="noopener">Instagram · @via.videosia</a>
   </div>
